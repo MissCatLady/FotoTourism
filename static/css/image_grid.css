@@ -1,0 +1,28 @@
+/* center grid*/
+.container ul{
+	text-align: center;
+	overflow: hidden;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.container li{
+	float: left;
+	width: 30%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+@media (max-width: 700px) {
+	.container li{
+		display:list-item;
+		width: 100%;
+
+	}
+
+	.container ul {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block links %}
+
+<link rel="stylesheet" href={{ url_for('static', filename='css/image_grid.css') }}>
+<link rel="stylesheet" href={{ url_for('static', filename='css/jquery.modal.css') }}>
+<script src={{ url_for('static', filename='js/jquery.modal.min.js') }}></script>
+{% endblock %}
+
+{% block content %}
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        {% include "index.js" %}
+    </script>
+{% endblock %}

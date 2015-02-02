@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block links %}
+
+<link rel="stylesheet" href={{ url_for('static', filename='css/approval_grid.css') }}>
+
+{% endblock %}
+
+{% block content %}
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        {% include "submissions.js" %}
+    </script>
+{% endblock %}

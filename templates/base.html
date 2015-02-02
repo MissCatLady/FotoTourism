@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>World Wide Foto</title>
+
+<link rel="stylesheet" href={{ url_for('static', filename='css/index.css') }}>
+<script src={{ url_for('static', filename='js/jquery.min.js') }}></script>
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Yanone+Kaffeesatz:300|Open+Sans:400' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block links %}
+
+{% endblock %}
+
+</head>
+<body>
+<div id="socialmedia">
+	<ul>
+		<li><a href=#><img src={{ url_for('static', filename="icons/clementine_email.png") }} height="23px"></a></li>
+		<li><a href=#><img src={{ url_for('static', filename="icons/clementine_instagram.png") }} height="23px"></a></li>
+		<li><a href=#><img src={{ url_for('static', filename="icons/clementine_rss.png") }} height="23px"></a></li>
+	</ul>
+</div>
+<div id="titlebar"> <a href="/" id="home">Foto Tourism</a></div>
+
+<div class="navbar">
+	<ul>
+		<li><a href=#>Concept</a></li>
+		<li><a href=#>Archives</a></li>
+		<li><a href=#>Cities</a></li>
+		<li><a href='/submit'>Submit</a></li>
+		<li><a href=#>Contact</a></li>
+	</ul>
+</div>
+
+<div class="line"></div>
+
+<div class="container">
+	{% block content %}
+
+	{% endblock %}
+
+</div>
+
+{% block scripts %}
+
+{% endblock %}
+
+
+</body>
+</html>
